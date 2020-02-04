@@ -1,19 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Text } from 'react-native';
 import eases from 'eases';
 
 export default class Counter extends Component {
-  static propTypes = {
-    start: PropTypes.number,
-    end: PropTypes.number.isRequired,
-    digits: PropTypes.number,
-    time: PropTypes.number,
-    easing: PropTypes.string,
-    onComplete: PropTypes.func,
-    style: PropTypes.any,
-  };
-
   static defaultProps = {
     start: 0,
     digits: 0,
